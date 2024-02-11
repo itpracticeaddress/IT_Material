@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git コマンド一覧</title>
+    <title>Gitコマンド一覧</title>
 </head>
+
 <body>
+    <h1>Gitコマンド一覧</h1>
+
+    <p>
+        <h3>ローカルリポジトリの作成</h3>
+        コマンド：git init <br>
+        initは「initializeの略である
+    </p>
+
+    <p>
+        <h3>Gitリポジトリのコピーを作成する</h3>
+        コマンド：git clone ＜リポジトリ名＞<br>
+        クローン（コピー）を作成する。＜リポジトリ名＞のところには「https://github.com/itpracticeaddress/IT_Material」などを入力する
+    </p>
+
+    <p>
+        <h3>変更をステージに追加する</h3>
+        コマンド：git add ＜ファイル名、ディレクトリ名など＞ <br>
+        git add . は変更分をすべてステージに追加するということである
+    </p>
     
+    <p>
+        <h3>変更を記録する（コミット）</h3>
+        コマンド：git commit<br>
+        editorを登録しているとeditor画面が開く <br>
+        git commit - m "コミットメッセージ" でメッセージ付きで変更を記録する
+    </p>
+
+    <p>
+        <h3>現在の変更状況を確認する</h3>
+        コマンド：git status <br>
+        変更されたファイルを確認する
+    </p>
+
+    <p>
+        <h3>変更差分を確認する</h3>
+        コマンド：git diff <br>
+        git addする前の変更分についてはgit diff やgit diff ＜ファイル名＞を使う <br>
+        git add した後の変更分については git add --stagedを使う <br>
+        diffはdifferenceの略である
+    </p>
+
+    <p>
+        <h3>変更履歴を確認する</h3>
+        コマンド：git log<br>
+        一行で表示するときはgit log --oneline <br>
+        ファイルの変更差分を表示するときはgit log -p ＜ファイル名＞ <br>
+        表示するコミット数を制限するときはgit log -n ＜コミット数＞
+    </p>
+    
+    <p>
+        <h3>ファイルの削除を記録する</h3>
+        コマンド：git rm ＜ファイル名＞<br>
+        git rm -r ＜ディレクトリ名＞<br>
+        ファイルを残したいときはgit rm --cached ＜ファイル名＞
+    </p>
 </body>
+
 </html>
